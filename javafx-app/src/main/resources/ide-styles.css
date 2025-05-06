@@ -1,0 +1,172 @@
+.keyword {
+    -fx-fill: #7a3e9d;
+    -fx-font-weight: bold;
+}
+.string {
+    -fx-fill: #2e7d32;
+}
+.comment {
+    -fx-fill: #888888;
+    -fx-font-style: italic;
+}
+.include {
+    -fx-fill: #1976d2;
+    -fx-font-weight: bold;
+}
+.code-area {
+    -fx-background-color: #f5f5f5;
+    -fx-font-family: 'monospace';
+}
+
+.text-area {
+    -fx-font-family: 'monospace';
+    -fx-font-size: 14px;
+}
+
+.text-area .content {
+    -fx-background-color: #f5f5f5;
+}
+
+.button {
+    -fx-background-color: #4285f4;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 5 10 5 10;
+}
+
+.button:hover {
+    -fx-background-color: #2a75f3;
+}
+
+.label {
+    -fx-font-weight: bold;
+}
+
+.action-button {
+    -fx-background-color: #2196F3;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-font-size: 16px;
+    -fx-padding: 10px 20px;
+    -fx-background-radius: 4px;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 5, 0, 0, 3);
+}
+
+.action-button:hover {
+    -fx-background-color: #0d8bf2;
+    -fx-cursor: hand;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+    -fx-transition: all 0.2s ease;
+}
+
+.action-button:pressed {
+    -fx-background-color: #0066cc;
+    -fx-scale-x: 0.98;
+    -fx-scale-y: 0.98;
+}
+
+/* Exit button styling */
+.exit-button {
+    -fx-background-color: #e53935;
+    -fx-text-fill: white;
+    -fx-font-weight: bold;
+    -fx-padding: 5 15 5 15;
+    -fx-background-radius: 4px;
+}
+
+.exit-button:hover {
+    -fx-background-color: #d32f2f;
+    -fx-cursor: hand;
+    -fx-scale-x: 1.05;
+    -fx-scale-y: 1.05;
+}
+
+/* Log panel styling */
+.log-container {
+    -fx-background-color: #f8f8f8;
+    -fx-border-color: #cccccc;
+    -fx-border-width: 0 0 0 1;
+    -fx-border-style: solid;
+}
+
+.log-panel {
+    -fx-background-color: #ffffff;
+    -fx-padding: 8px;
+    -fx-font-family: monospace;
+    -fx-font-size: 12px;
+}
+
+.log-scroll-pane {
+    -fx-background-color: transparent;
+    -fx-border-color: #e0e0e0;
+    -fx-border-width: 1px;
+    -fx-border-radius: 2px;
+}
+
+.log-scroll-pane > .viewport {
+    -fx-background-color: transparent;
+}
+
+.log-timestamp {
+    -fx-fill: #666666;
+    -fx-font-weight: bold;
+}
+
+.log-message {
+    -fx-fill: #333333;
+}
+
+.section-header {
+    -fx-font-size: 14px;
+    -fx-font-weight: bold;
+    -fx-padding: 0 0 5 0;
+    -fx-text-fill: #333333;
+}
+
+/* Stats container styling */
+.stats-container {
+    -fx-background-color: #f0f0f0;
+    -fx-border-color: #cccccc;
+    -fx-border-width: 1 0 0 0;
+    -fx-border-style: solid;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.2), 2, 0, 0, 0);
+}
+
+/* Add dark mode support for log panel */
+.dark-mode .log-container {
+    -fx-background-color: #2a2a2a;
+    -fx-border-color: #555555;
+    -fx-border-style: solid;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.4), 3, 0, 0, 0);
+}
+
+.dark-mode .log-panel {
+    -fx-background-color: #333333;
+}
+
+.dark-mode .log-scroll-pane {
+    -fx-background-color: transparent;
+    -fx-border-color: #666666;
+    -fx-border-width: 1px;
+    -fx-border-radius: 2px;
+}
+
+.dark-mode .section-header {
+    -fx-text-fill: #e0e0e0;
+}
+
+.dark-mode .log-timestamp {
+    -fx-fill: #aaaaaa;
+}
+
+.dark-mode .log-message {
+    -fx-fill: #dddddd;
+}
+
+/* Dark mode support for stats container */
+.dark-mode .stats-container {
+    -fx-background-color: #3a3a3a;
+    -fx-border-color: #555555;
+    -fx-effect: dropshadow(three-pass-box, rgba(0,0,0,0.3), 2, 0, 0, 0);
+}
